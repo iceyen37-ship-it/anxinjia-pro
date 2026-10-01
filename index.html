@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[團隊名稱]｜醫療照護 APP 設計開發</title>
+<meta name="description" content="以吞嚥照護 APP「安心呷」為案例，為醫院、語言治療所與長照機構提供照護 APP 白牌授權與客製化設計開發。">
+<meta property="og:title" content="[團隊名稱]｜醫療照護 APP 設計開發">
+<meta property="og:description" content="以吞嚥照護 APP「安心呷」為案例，為醫院、語言治療所與長照機構提供照護 APP 白牌授權與客製化設計開發。">
+<meta property="og:image" content="images/logo.png">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6F4EE;font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;color:#1C1B18}
+a{color:#0B6E65}a:hover{color:#08524B}
+img{max-width:100%}
+section{scroll-margin-top:80px}
+:focus-visible{outline:3px solid #0B6E65;outline-offset:3px}
+details{border-bottom:1px solid #E2DDD0}
+summary{list-style:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;gap:16px;font-size:19px;font-weight:700}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;font-weight:400;color:#0B6E65;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin:0;padding:0 0 24px;font-size:17px;line-height:1.8;color:#55524A}
+@media (max-width:760px){header nav a:not(:last-child){display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-width: 360px; background: #F6F4EE; color: #1C1B18; font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif">
+
+<header style="position: sticky; top: 0; z-index: 10; background: #1C1B18; padding: 16px 6%; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #F6F4EE">
+<span style="width: 40px; height: 40px; border-radius: 10px; background: #FFE94A; color: #1C1B18; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 900">LOGO</span>
+<span style="font-size: 22px; font-weight: 900; letter-spacing: 1px">[團隊名稱]</span>
+</a>
+<nav aria-label="主選單" style="display: flex; align-items: center; gap: 28px; flex-wrap: wrap; font-size: 16px; font-weight: 500">
+<a href="#services" style="color: #F6F4EE; text-decoration: none">服務項目</a>
+<a href="#case" style="color: #F6F4EE; text-decoration: none">案例：安心呷</a>
+<a href="#process" style="color: #F6F4EE; text-decoration: none">合作流程</a>
+<a href="#pricing" style="color: #F6F4EE; text-decoration: none">方案</a>
+<a href="#faq" style="color: #F6F4EE; text-decoration: none">常見問題</a>
+<a href="#contact" style="background: #FFE94A; color: #1C1B18; text-decoration: none; padding: 12px 22px; border-radius: 10px; font-weight: 700">預約諮詢</a>
+</nav>
+</header>
+
+<section id="top" style="background: #1C1B18; color: #F6F4EE; padding: 96px 6% 0px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 56px; overflow: hidden">
+<div style="flex: 1 1 520px; max-width: 720px; display: flex; flex-direction: column; gap: 28px; padding-bottom: 104px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; color: #FFE94A">醫院、治療所與長照機構的數位照護夥伴</p>
+<h1 style="margin: 0; font-size: clamp(40px, 7vw, 64px); line-height: 1.2; font-weight: 900">把院所的專業衛教，<br>做成照顧者真的會用的 APP</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.8; color: #D6D2C4">我們從照顧者訪談與臨床流程出發，設計並開發醫療照護 APP。可以直接採用已完成的吞嚥照護 APP「安心呷」換上您的品牌，也可以為您的科別量身打造。</p>
+<div style="display: flex; gap: 16px; flex-wrap: wrap">
+<a href="#contact" style="background: #FFE94A; color: #1C1B18; text-decoration: none; padding: 18px 32px; border-radius: 12px; font-size: 18px; font-weight: 700">預約 30 分鐘諮詢</a>
+<a href="#case" style="border: 1.5px solid #6E6A5E; color: #F6F4EE; text-decoration: none; padding: 18px 32px; border-radius: 12px; font-size: 18px; font-weight: 700">看 Demo 案例</a>
+</div>
+</div>
+<div style="flex: 1 1 420px; display: flex; justify-content: center; align-items: flex-end; gap: 20px">
+<img src="images/texture-card.png" alt="安心呷質地卡畫面" style="width: 250px; height: 510px; object-fit: contain; margin-bottom: -40px">
+<img src="images/elder-card.png" alt="安心呷長輩卡畫面" style="width: 290px; height: 592px; object-fit: contain; margin-bottom: -90px">
+</div>
+</section>
+
+<section id="services" style="padding: 112px 6%; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 800px">
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">兩種合作方式，依需求選擇</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #55524A">想快速上線，選白牌授權；想解決其他科別的照護問題，選客製化開發。</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px">
+<div style="background: #FFE94A; border-radius: 28px; padding: 48px; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 16px; font-weight: 700">快速導入</p>
+<h3 style="margin: 0; font-size: clamp(26px, 4vw, 34px); font-weight: 900">安心呷白牌授權</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #2E2C24">以已完成、經場域測試的吞嚥照護 APP 為基礎，換上院所的名稱、Logo 與衛教內容，成為院所自己的照護 APP。</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 2; color: #2E2C24">
+<li>院所品牌名稱、Logo 與配色</li>
+<li>放入院所自製的衛教影片與食譜</li>
+<li>院所專屬 QR Code 衛教單與海報</li>
+<li>約 4–6 週上線</li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2DDD0; border-radius: 28px; padding: 48px; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; color: #0B6E65">量身打造</p>
+<h3 style="margin: 0; font-size: clamp(26px, 4vw, 34px); font-weight: 900">客製化照護 APP 設計開發</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #55524A">針對其他科別或照護情境，從需求訪談、服務設計、介面設計到 APP 開發，一次完成。</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 2; color: #3A3830">
+<li>病人、家屬與醫療人員需求訪談</li>
+<li>服務流程設計與可點擊原型</li>
+<li>iOS／Android APP 開發與上架</li>
+<li>場域測試與成效評估</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="case" style="background: #FFFFFF; padding: 112px 6%; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: center; gap: 16px">
+<img src="images/logo.png" alt="安心呷標誌" style="width: 72px; height: 60px; object-fit: contain">
+<p style="margin: 0; font-size: 16px; font-weight: 700; color: #0B6E65">Demo 案例</p>
+</div>
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">安心呷：<br>吞嚥困難長輩的居家飲食照護</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.9; color: #55524A">語言治療師在診間給的質地建議，家屬回家後常常記不清、做不到。安心呷把 IDDSI 國際吞嚥飲食標準轉成家屬看得懂的影片與料理示範，並讓家屬、看護與治療師共享飲食紀錄。</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #6B675C">產學合作示範專案｜合作單位：[學術合作單位，經同意後列出]</p>
+</div>
+<div style="flex: 1 1 420px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px">
+<div style="background: #F6F4EE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #FFE94A; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1C1B18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a7.5 7.5 0 0 1-11 6.6L4 20l1.6-4.8A7.5 7.5 0 1 1 21 11.5z"></path><path d="M9 11h.01"></path><path d="M13 11h.01"></path><path d="M17 11h.01"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">照顧者訪談</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">找出質地調整、醫囑遺忘、多人照顧不一致三大痛點。</p>
+</div>
+<div style="background: #F6F4EE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #FFE94A; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1C1B18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M10 8.5v5l4.5-2.5z"></path><path d="M8 21h8"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">專業內容轉譯</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">與營養及吞嚥照護專業合作，把 IDDSI 分級做成影片與圖像。</p>
+</div>
+<div style="background: #F6F4EE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #FFE94A; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1C1B18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M9.5 14l2.5-6 2.5 6"></path><path d="M10.3 12h3.4"></path><path d="M11 18.5h2"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">高齡友善介面</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">大字、圖像化、步驟少，外籍看護也能上手。</p>
+</div>
+<div style="background: #F6F4EE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<span style="width: 52px; height: 52px; border-radius: 14px; background: #FFE94A; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1C1B18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1"></path><path d="M8.5 13l2.5 2.5 4.5-5"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">場域測試</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">規劃中：將與合作院所進行場域測試，驗證照顧者的使用成效。</p>
+</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<div style="width: 100%; box-sizing: border-box; background: #1C1B18; border-radius: 24px; padding: 28px; display: flex; justify-content: center">
+<img src="images/texture-card.png" alt="質地卡：IDDSI 質地測定示範影片" style="width: 190px; height: 388px; object-fit: contain">
+</div>
+<p style="margin: 0; font-size: 17px; font-weight: 700">質地卡｜學會看質地</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<div style="width: 100%; box-sizing: border-box; background: #1C1B18; border-radius: 24px; padding: 28px; display: flex; justify-content: center">
+<img src="images/home-meals.png" alt="自家菜：每日飲食拍照紀錄" style="width: 190px; height: 388px; object-fit: contain">
+</div>
+<p style="margin: 0; font-size: 17px; font-weight: 700">自家菜｜記下每一餐</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<div style="width: 100%; box-sizing: border-box; background: #1C1B18; border-radius: 24px; padding: 28px; display: flex; justify-content: center">
+<img src="images/visit-log.png" alt="安心錄：看診紀錄與建議質地等級" style="width: 190px; height: 388px; object-fit: contain">
+</div>
+<p style="margin: 0; font-size: 17px; font-weight: 700">安心錄｜留住醫囑</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<div style="width: 100%; box-sizing: border-box; background: #1C1B18; border-radius: 24px; padding: 28px; display: flex; justify-content: center">
+<img src="images/elder-card.png" alt="長輩卡：照顧者協作與每週餐飲回顧" style="width: 190px; height: 388px; object-fit: contain">
+</div>
+<p style="margin: 0; font-size: 17px; font-weight: 700">長輩卡｜全家一起照顧</p>
+</div>
+</div>
+<div style="display: flex; gap: 16px; flex-wrap: wrap">
+<a href="https://iceyen37-ship-it.github.io/anxinjia/" style="background: #1C1B18; color: #F6F4EE; text-decoration: none; padding: 16px 28px; border-radius: 12px; font-size: 17px; font-weight: 700">參觀安心呷 Demo 網站</a>
+<a href="#contact" style="border: 1.5px solid #1C1B18; color: #1C1B18; text-decoration: none; padding: 16px 28px; border-radius: 12px; font-size: 17px; font-weight: 700">預約 APP 實機展示</a>
+</div>
+</section>
+
+<section style="padding: 112px 6%; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 800px">
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">同樣的方法，也適用這些照護情境</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #55524A">凡是「診間說明、回家執行」的照護，都可能是下一個 APP。</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">中風後溝通與復健</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">居家練習影片、家屬溝通技巧與進度紀錄。</p>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">兒童語言發展</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">家長在家執行的語言遊戲與每週回報。</p>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">慢性病飲食管理</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">腎臟病、糖尿病的飲食衛教與紀錄。</p>
+</div>
+<div style="background: #FFFFFF; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">出院準備與居家照護</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #55524A">管路照護、傷口照護與回診提醒。</p>
+</div>
+</div>
+</section>
+
+<section id="process" style="background: #1C1B18; color: #F6F4EE; padding: 112px 6%; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 800px">
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">合作流程</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #D6D2C4">白牌授權從步驟 3 開始；客製化開發走完全部四步。</p>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 28px">
+<li style="border-top: 4px solid #FFE94A; padding-top: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 36px; font-weight: 900; color: #FFE94A">1</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 700">需求訪談</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #D6D2C4">與醫療團隊、病人及家屬訪談，釐清照護流程中的斷點。</p>
+</li>
+<li style="border-top: 4px solid #FFE94A; padding-top: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 36px; font-weight: 900; color: #FFE94A">2</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 700">服務設計與原型</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #D6D2C4">提出服務流程與可點擊原型，與醫療團隊確認內容正確性。</p>
+</li>
+<li style="border-top: 4px solid #FFE94A; padding-top: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 36px; font-weight: 900; color: #FFE94A">3</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 700">開發與場域測試</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #D6D2C4">完成 APP 並在院所小規模試用，依回饋修正。</p>
+</li>
+<li style="border-top: 4px solid #FFE94A; padding-top: 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 36px; font-weight: 900; color: #FFE94A">4</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 700">上線與維運</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #D6D2C4">上架 App Store／Google Play，提供教育訓練與後續維護。</p>
+</li>
+</ol>
+</section>
+
+<section id="pricing" style="padding: 112px 6%; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 800px">
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">方案與費用</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #55524A">以下為參考價格，實際費用依院所規模與需求報價。</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; align-items: stretch">
+<div style="background: #FFFFFF; border: 1px solid #E2DDD0; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 26px; font-weight: 900">Demo 試用</h3>
+<p style="margin: 0; font-size: 40px; font-weight: 900">免費</p>
+<p style="margin: 0; font-size: 16px; color: #55524A">先體驗再決定</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 2; color: #3A3830">
+<li>安心呷實機展示</li>
+<li>單一門診試用 4 週</li>
+<li>試用後使用報告</li>
+</ul>
+<a href="#contact" style="margin-top: auto; text-align: center; border: 1.5px solid #1C1B18; color: #1C1B18; text-decoration: none; padding: 16px; border-radius: 12px; font-size: 17px; font-weight: 700">申請試用</a>
+</div>
+<div style="background: #1C1B18; color: #F6F4EE; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<h3 style="margin: 0; font-size: 26px; font-weight: 900">白牌授權</h3>
+<span style="background: #FFE94A; color: #1C1B18; font-size: 14px; font-weight: 700; padding: 4px 10px; border-radius: 6px">最快上線</span>
+</div>
+<p style="margin: 0; font-size: 36px; font-weight: 900">NT$ 80,000 起<span style="font-size: 17px; font-weight: 500"> 建置費</span></p>
+<p style="margin: 0; font-size: 18px; color: #D6D2C4">＋ NT$ 36,000 起／年 授權與維護</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 2; color: #E6E2D6">
+<li>院所品牌 APP 上架</li>
+<li>衛教內容置換</li>
+<li>教育訓練 1 場</li>
+<li>系統維護與版本更新</li>
+</ul>
+<a href="#contact" style="margin-top: auto; text-align: center; background: #FFE94A; color: #1C1B18; text-decoration: none; padding: 16px; border-radius: 12px; font-size: 17px; font-weight: 700">洽詢白牌授權</a>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2DDD0; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 26px; font-weight: 900">客製化開發</h3>
+<p style="margin: 0; font-size: 36px; font-weight: 900">NT$ 500,000 起</p>
+<p style="margin: 0; font-size: 16px; color: #55524A">依功能範圍與時程報價</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 2; color: #3A3830">
+<li>需求訪談與服務設計</li>
+<li>介面設計與 APP 開發</li>
+<li>場域測試與成效評估</li>
+<li>上架與維運方案另計</li>
+</ul>
+<a href="#contact" style="margin-top: auto; text-align: center; border: 1.5px solid #1C1B18; color: #1C1B18; text-decoration: none; padding: 16px; border-radius: 12px; font-size: 17px; font-weight: 700">討論您的專案</a>
+</div>
+</div>
+</section>
+
+<section style="background: #FFFFFF; padding: 112px 6%; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">關於團隊</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.9; color: #55524A">我們以設計為出發點，從照顧者與醫療人員的真實經驗找出問題，再與營養、語言治療等醫療專業合作，把專業衛教轉化成好懂、好用的數位服務。</p>
+</div>
+<div style="flex: 1 1 420px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div style="background: #F6F4EE; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 22px; font-weight: 700">劉品姸</p>
+<p style="margin: 0; font-size: 16px; color: #55524A">臺灣科技大學｜設計系</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #55524A">安心呷 設計開發</p>
+</div>
+</div>
+</section>
+
+<section id="faq" style="padding: 112px 6%; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">常見問題</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #55524A">其他問題歡迎在諮詢表單留言。</p>
+</div>
+<div style="flex: 2 1 520px; display: flex; flex-direction: column">
+<details open><summary>白牌授權和客製化開發有什麼不同？</summary><p>白牌授權是把已完成的安心呷換上院所的品牌與衛教內容，上線快、費用低；客製化開發是針對其他科別或照護情境，從頭設計一個新的 APP。</p></details>
+<details><summary>可以先看 Demo 再決定嗎？</summary><p>可以。我們提供安心呷實機展示，也可安排單一門診免費試用 4 週。</p></details>
+<details><summary>客製化開發大約需要多久？</summary><p>依功能範圍約 3 到 6 個月，包含需求訪談、服務設計、開發與場域測試。</p></details>
+<details><summary>需要串接醫院的 HIS 或電子病歷嗎？</summary><p>白牌版本不需要，由家屬自行下載使用。客製化專案若需要串接，可在需求訪談時評估。</p></details>
+<details><summary>這類 APP 算醫療器材嗎？</summary><p>只做衛教與紀錄、不提供診斷或治療建議的 APP，一般不屬於醫療器材；若功能涉及判讀或治療建議，需依衛福部食藥署規定辦理。我們會在設計階段一併評估。</p></details>
+<details><summary>病人資料的保護與歸屬？</summary><p>[請填寫資料存放方式、加密、個資法遵循與資料所有權約定]</p></details>
+
+</div>
+</section>
+
+<section id="contact" style="background: #FFE94A; padding: 112px 6%; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-size: clamp(30px, 5vw, 44px); line-height: 1.3; font-weight: 900">預約諮詢</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #2E2C24">告訴我們院所的照護需求，我們會在 [2] 個工作天內回覆，安排安心呷實機展示或專案討論。</p>
+<p style="margin: 0; font-size: 17px; font-weight: 700">或直接來信：<a href="mailto:iceyen37@gmail.com" style="color: #1C1B18">iceyen37@gmail.com</a></p>
+</div>
+<form aria-label="預約諮詢表單" action="mailto:iceyen37@gmail.com" method="post" enctype="text/plain" style="flex: 2 1 560px; background: #FFFDF2; border-radius: 24px; padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700">院所名稱
+<input type="text" name="院所名稱" placeholder="例：○○醫院 復健科" style="font-size: 16px; padding: 14px 16px; border: 1.5px solid #C9C3B2; border-radius: 12px; background: #FFFFFF; font-family: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700">有興趣的服務
+<select name="服務" style="font-size: 16px; padding: 14px 16px; border: 1.5px solid #C9C3B2; border-radius: 12px; background: #FFFFFF; font-family: inherit"><option>安心呷白牌授權</option><option>客製化照護 APP 開發</option><option>先看 Demo 再決定</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700">聯絡人姓名
+<input type="text" name="聯絡人" style="font-size: 16px; padding: 14px 16px; border: 1.5px solid #C9C3B2; border-radius: 12px; background: #FFFFFF; font-family: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700">職稱
+<input type="text" name="職稱" placeholder="例：語言治療師" style="font-size: 16px; padding: 14px 16px; border: 1.5px solid #C9C3B2; border-radius: 12px; background: #FFFFFF; font-family: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700">Email
+<input type="email" name="Email" style="font-size: 16px; padding: 14px 16px; border: 1.5px solid #C9C3B2; border-radius: 12px; background: #FFFFFF; font-family: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700">電話
+<input type="tel" name="電話" style="font-size: 16px; padding: 14px 16px; border: 1.5px solid #C9C3B2; border-radius: 12px; background: #FFFFFF; font-family: inherit"></label>
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 700">照護需求說明
+<textarea name="需求說明" rows="4" placeholder="例：想為中風病人的居家溝通練習做一個 APP" style="font-size: 16px; padding: 14px 16px; border: 1.5px solid #C9C3B2; border-radius: 12px; background: #FFFFFF; font-family: inherit; resize: vertical"></textarea></label>
+<button type="submit" style="grid-column: 1 / -1; justify-self: start; background: #1C1B18; color: #FFE94A; border: none; border-radius: 12px; padding: 18px 44px; font-size: 18px; font-weight: 700; font-family: inherit; cursor: pointer">送出諮詢</button>
+</form>
+</section>
+
+<footer style="background: #1C1B18; color: #D6D2C4; padding: 56px 6%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; font-size: 15px; line-height: 1.8">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 20px; font-weight: 900; color: #F6F4EE">[團隊名稱]</p>
+<p style="margin: 0">醫療照護 APP 設計開發</p>
+<p style="margin: 0">聯絡我們：<a href="mailto:iceyen37@gmail.com" style="color: #F6F4EE">iceyen37@gmail.com</a></p>
+</div>
+<nav aria-label="頁尾連結" style="display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start">
+<a href="https://iceyen37-ship-it.github.io/anxinjia/" style="color: #F6F4EE">安心呷 Demo 網站</a>
+<a href="[隱私權政策連結]" style="color: #F6F4EE">隱私權政策</a>
+</nav>
+<p style="margin: 0; width: 100%; font-size: 13px; color: #A39E8C">安心呷為示範案例，定位為照護紀錄與衛教輔助工具，不取代醫療專業人員的評估、診斷與治療。© 2026 [團隊名稱]</p>
+</footer>
+
+</div>
+</body>
+</html>
